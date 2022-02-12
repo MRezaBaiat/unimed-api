@@ -87,7 +87,7 @@ export default class Conference{
     public audioMaxBitrate: number | 'unlimited';
 
     @Prop({type: {},required: true})
-    public preferredCodecs: string[];
+    public preferredCodecs: 'vp8' | 'vp9' | 'h264'[];
 
     @Prop({required: true})
     public trickleIce: boolean;
