@@ -51,3 +51,4 @@ export interface ValidatorModel {
 export interface ValidatorFields {
     [key: string]: ValidatorField;
 }
+export declare type RefWrapper<T> = T | string;
