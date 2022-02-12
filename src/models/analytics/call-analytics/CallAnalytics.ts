@@ -146,7 +146,7 @@ class Stats extends AbstractCallMetric<{
 }
 
 class Error extends AbstractCallMetric<{ info: string,error: any }>{
-        constructor(sessionId: string,error: Error,info?: string) {
+        constructor(sessionId: string,error: any,info?: string) {
             super(sessionId,CallMetricsEvent.ERROR,{info, error});
         }
 }
