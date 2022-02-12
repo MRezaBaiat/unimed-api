@@ -63,9 +63,10 @@ export default class User {
     price: number;
     currency: number;
     ready: boolean;
-    sms_code: string;
+    sms_code?: string;
     fcmtoken: string;
-    creationDate: number;
+    createdAt: Date;
+    updatedAt: Date;
     finalizable_visits: Visit[] | string[];
     gender: 'male' | 'female' | '';
     notificationQueuePatients: string[];

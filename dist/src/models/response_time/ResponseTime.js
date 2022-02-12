@@ -9,20 +9,20 @@ let ResponseTime = class ResponseTime {
         this.to = to;
     }
 };
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ type: fromToType, required: true }),
-    tslib_1.__metadata("design:type", Object)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ type: fromToType, required: true }),
+    (0, tslib_1.__metadata)("design:type", Object)
 ], ResponseTime.prototype, "from", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ type: fromToType, required: true }),
-    tslib_1.__metadata("design:type", Object)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ type: fromToType, required: true }),
+    (0, tslib_1.__metadata)("design:type", Object)
 ], ResponseTime.prototype, "to", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ type: mongoose_types_1.ObjectId, ref: 'healthcenters', required: false }),
-    tslib_1.__metadata("design:type", Object)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ type: mongoose_types_1.ObjectId, ref: 'healthcenters', required: false }),
+    (0, tslib_1.__metadata)("design:type", Object)
 ], ResponseTime.prototype, "healthCenter", void 0);
-ResponseTime = tslib_1.__decorate([
-    mongoose_types_1.Schema(),
-    tslib_1.__metadata("design:paramtypes", [Object, Object])
+ResponseTime = (0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Schema)(),
+    (0, tslib_1.__metadata)("design:paramtypes", [Object, Object])
 ], ResponseTime);
 exports.default = ResponseTime;

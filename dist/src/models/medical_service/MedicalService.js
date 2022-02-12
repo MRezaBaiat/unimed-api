@@ -10,28 +10,28 @@ let MedicalService = class MedicalService {
         this.price = price;
     }
 };
-tslib_1.__decorate([
-    mongoose_types_1.Prop(),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)(),
+    (0, tslib_1.__metadata)("design:type", String)
 ], MedicalService.prototype, "logoUrl", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ required: true }),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ required: true }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], MedicalService.prototype, "title", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ required: true }),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ required: true }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], MedicalService.prototype, "subTitle", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ required: true }),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ required: true }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], MedicalService.prototype, "details", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ required: true }),
-    tslib_1.__metadata("design:type", Number)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ required: true }),
+    (0, tslib_1.__metadata)("design:type", Number)
 ], MedicalService.prototype, "price", void 0);
-MedicalService = tslib_1.__decorate([
-    mongoose_types_1.Schema(),
-    tslib_1.__metadata("design:paramtypes", [String, String, String, Number])
+MedicalService = (0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Schema)(),
+    (0, tslib_1.__metadata)("design:paramtypes", [String, String, String, Number])
 ], MedicalService);
 exports.default = MedicalService;

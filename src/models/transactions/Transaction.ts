@@ -21,7 +21,7 @@ class TargetType{
     name!:string;
 }
 
-@Schema()
+@Schema({timestamps: true})
 export default class Transaction{
     _id!:string;
 
@@ -55,15 +55,17 @@ export default class Transaction{
     @Prop()
     visit_id:string;
 
-    @Prop({required: true})
-    date:number;
+    @Prop()
+    createdAt:Date;
+
+    @Prop()
+    updatedAt:Date;
 
     @Prop({default: ''})
     hint:string;
 
-    constructor(type: TransactionType,amount: number,date: number) {
+    constructor(type: TransactionType,amount: number) {
         this.type = type;
         this.amount = amount;
-        this.date = date;
     }
 }

@@ -1,4 +1,3 @@
-import { ReservationState } from '../models/Enums';
 export default class Translations {
     static reservations: {
         NEW: string;

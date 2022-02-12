@@ -35,7 +35,7 @@ export interface Participant{
     }
 }
 
-@Schema()
+@Schema({timestamps: {createdAt: true}})
 export default class Conference{
 
     @Prop({required: true,index: true, unique: true})
@@ -47,8 +47,8 @@ export default class Conference{
     @Prop({required: true, index: true})
     public visitId: string;
 
-    @Prop({required: true})
-    public createdAt: number;
+    @Prop()
+    public createdAt: Date;
 
     @Prop()
     public endedAt!: number;
@@ -107,7 +107,6 @@ export default class Conference{
         this.host = host;
         this.receiver = receiver;
         this.visitId = visitId;
-        this.createdAt = Date.now();
         this.type = type;
         this.mediaConstraints = config.mediaConstraints;
         this.videoCallVersion = videoCallVersion;

@@ -44,7 +44,7 @@ class ReceiptType{
     healthCenterSettled:boolean
 }
 
-@Schema({})
+@Schema({timestamps: true})
 class Visit {
     _id!: string;
 
@@ -60,17 +60,17 @@ class Visit {
     @Prop({required: true,default:VisitStatus.IN_QUEUE,index: true})
     state: VisitStatus;
 
-    @Prop({required: true})
-    initiate_date: number;
+    @Prop()
+    createdAt: Date;
+
+    @Prop()
+    updatedAt: Date;
 
     @Prop({index: true})
-    start_date: number;
+    startDate: string;
 
     @Prop({index: true})
-    startDateUTC: string;
-
-    @Prop({index: true})
-    end_date: number;
+    endDate: string;
 
     @Prop({type: ()=> [ConversationType], default: []})
     conversations : {delivered:string[];chat:Chat}[];

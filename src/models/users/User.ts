@@ -136,7 +136,7 @@ class DetailsType {
     }
 }
 
-@Schema()
+@Schema({timestamps:true})
 export default class User {
     _id!: string;
 
@@ -169,17 +169,20 @@ export default class User {
 
     @Exclude()
     @Prop()
-    sms_code: string;
+    sms_code?: string;
 
     @Exclude()
     @Prop()
     fcmtoken: string;
 
     @Prop()
-    creationDate: number;
+    createdAt: Date;
+
+    @Prop()
+    updatedAt: Date;
 
     @Prop({type: [String]})
-    finalizable_visits:Visit[] | string[];
+    finalizable_visits!:Visit[] | string[];
 
     @Prop()
     gender:'male' | 'female' | '' = '';

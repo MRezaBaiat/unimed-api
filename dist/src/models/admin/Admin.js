@@ -13,28 +13,28 @@ let Admin = class Admin {
         this.privileges = privileges;
     }
 };
-tslib_1.__decorate([
-    mongoose_types_1.Prop(),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)(),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Admin.prototype, "name", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop(),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)(),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Admin.prototype, "username", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop(),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)(),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Admin.prototype, "password", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop(),
-    tslib_1.__metadata("design:type", String)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)(),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Admin.prototype, "type", void 0);
-tslib_1.__decorate([
-    mongoose_types_1.Prop({ type: () => index_1.Privileges }),
-    tslib_1.__metadata("design:type", index_1.Privileges)
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ type: () => index_1.Privileges }),
+    (0, tslib_1.__metadata)("design:type", index_1.Privileges)
 ], Admin.prototype, "privileges", void 0);
-Admin = tslib_1.__decorate([
-    mongoose_types_1.Schema(),
-    tslib_1.__metadata("design:paramtypes", [String, String, String, String, index_1.Privileges])
+Admin = (0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Schema)(),
+    (0, tslib_1.__metadata)("design:paramtypes", [String, String, String, String, index_1.Privileges])
 ], Admin);
 exports.default = Admin;

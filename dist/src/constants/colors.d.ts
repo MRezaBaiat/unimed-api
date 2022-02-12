@@ -1,4 +1,3 @@
-import { ReservationState } from '../models/Enums';
 export default class Colors {
     static reservations: {
         NEW: string;

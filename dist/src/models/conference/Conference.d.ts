@@ -31,7 +31,7 @@ export default class Conference {
     id: string;
     host: string;
     visitId: string;
-    createdAt: number;
+    createdAt: Date;
     endedAt: number;
     type: ConferenceType;
     initiator: Participant;

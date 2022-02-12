@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const javascript_dev_kit_1 = tslib_1.__importStar(require("javascript-dev-kit"));
+const javascript_dev_kit_1 = (0, tslib_1.__importStar)(require("javascript-dev-kit"));
 const generateUUID = () => {
     return javascript_dev_kit_1.default.generateUUID();
 };
@@ -40,9 +40,9 @@ const dayNumberToString = (day, lang = 'fa') => {
     }
 };
 const isReserveValid = (request, workTimes, reserved) => {
-    const smd = javascript_dev_kit_1.smartDate(request.from);
+    const smd = (0, javascript_dev_kit_1.smartDate)(request.from);
     const ymd = smd.toYMD();
-    if (request.from < javascript_dev_kit_1.smartDate().getTime()) {
+    if (request.from < (0, javascript_dev_kit_1.smartDate)().getTime()) {
         return false;
     }
     if (javascript_dev_kit_1.default.datesRangesConflict(request, reserved, 60 * 1000)) {
@@ -52,14 +52,14 @@ const isReserveValid = (request, workTimes, reserved) => {
         if (workTime.exceptions && workTime.exceptions.length > 0 && workTime.exceptions.includes(ymd)) {
             return false;
         }
-        return javascript_dev_kit_1.smartDate(ymd + ' ' + workTime.from).getTime() <= request.from && javascript_dev_kit_1.smartDate(ymd + ' ' + workTime.to).getTime() >= request.to;
+        return (0, javascript_dev_kit_1.smartDate)(ymd + ' ' + workTime.from).getTime() <= request.from && (0, javascript_dev_kit_1.smartDate)(ymd + ' ' + workTime.to).getTime() >= request.to;
     }) !== undefined;
 };
 const calculateWorkTimeIntervals = (fromTime, toTime, reserved, workTimes, gapMinutes) => {
-    const minimumDate = javascript_dev_kit_1.smartDate(fromTime).getTime();
-    const maximumDate = javascript_dev_kit_1.smartDate(toTime).getTime();
+    const minimumDate = (0, javascript_dev_kit_1.smartDate)(fromTime).getTime();
+    const maximumDate = (0, javascript_dev_kit_1.smartDate)(toTime).getTime();
     const gapMillis = gapMinutes * 60 * 1000;
-    const now = javascript_dev_kit_1.smartDate(fromTime);
+    const now = (0, javascript_dev_kit_1.smartDate)(fromTime);
     const options = [];
     while (now.getTime() < maximumDate) {
         const nowDateString = now.formatGregorian('YYYY/MM/DD');
@@ -68,12 +68,12 @@ const calculateWorkTimeIntervals = (fromTime, toTime, reserved, workTimes, gapMi
             if (workTime.exceptions && workTime.exceptions.length > 0 && workTime.exceptions.includes(now.formatGregorian('jYYYY/jMM/jDD'))) {
                 return;
             }
-            const workTimeBeginning = javascript_dev_kit_1.smartDate(nowDateString + ' ' + workTime.from);
-            const workTimeEnd = javascript_dev_kit_1.smartDate(nowDateString + ' ' + workTime.to);
+            const workTimeBeginning = (0, javascript_dev_kit_1.smartDate)(nowDateString + ' ' + workTime.from);
+            const workTimeEnd = (0, javascript_dev_kit_1.smartDate)(nowDateString + ' ' + workTime.to);
             let timeIndex = workTimeBeginning.getTime();
             while (timeIndex + gapMillis <= workTimeEnd.getTime() && timeIndex + gapMillis <= maximumDate) {
                 if (timeIndex >= minimumDate && !javascript_dev_kit_1.default.datesRangesConflict({ from: timeIndex, to: timeIndex + gapMillis }, reserved, 60 * 1000)) {
-                    options.push(javascript_dev_kit_1.smartDate(timeIndex).toHM() + ' - ' + javascript_dev_kit_1.smartDate(timeIndex + gapMillis).toHM());
+                    options.push((0, javascript_dev_kit_1.smartDate)(timeIndex).toHM() + ' - ' + (0, javascript_dev_kit_1.smartDate)(timeIndex + gapMillis).toHM());
                 }
                 timeIndex += gapMillis;
             }

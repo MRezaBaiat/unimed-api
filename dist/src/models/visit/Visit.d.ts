@@ -18,10 +18,10 @@ declare class Visit {
     doctor: User;
     discount?: DiscountCoupon;
     state: VisitStatus;
-    initiate_date: number;
-    start_date: number;
-    startDateUTC: string;
-    end_date: number;
+    createdAt: Date;
+    updatedAt: Date;
+    startDate: string;
+    endDate: string;
     conversations: {
         delivered: string[];
         chat: Chat;
