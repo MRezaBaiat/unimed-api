@@ -7,20 +7,20 @@ export default class Rating{
     visitId: string;
 
     @Prop({required: true})
-    service_quality: number;
+    serviceQuality: number;
 
     @Prop({required: true})
-    video_call_satisfaction: number;
+    videoCallSatisfaction: number;
 
     @Prop({required: true})
-    doctor_details_clearity: number;
+    doctorDetailsClearity: number;
 
     @Prop({required: true})
-    doctor_solutions: number;
+    doctorSolutions: number;
 
     @Prop({required: true})
-    doctor_detailed_consequences: number;
+    doctorDetailedConsequences: number;
 
     @Prop({required: true})
-    environment_details: number;
+    environmentDetails: number;
 };

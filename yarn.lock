@@ -471,7 +471,7 @@ jalali-moment@*:
     inquirer "^8.0.0"
     moment "^2.26.0"
 
-javascript-dev-kit@~0.28.3:
+javascript-dev-kit@~0.28.4:
   version "0.28.4"
   resolved "https://registry.yarnpkg.com/javascript-dev-kit/-/javascript-dev-kit-0.28.4.tgz#2fa37955e8957374a6f04315251ea6e2bd3cf4e8"
   integrity sha512-r2JQxb2GA8M33vs1roZGvkMsvt80se88VuWADyVcPei1VpFVty66GgfSRQ8gTpMBlF1d3h10A4+7zROV6bKCRA==

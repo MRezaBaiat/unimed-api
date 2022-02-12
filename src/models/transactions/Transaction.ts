@@ -50,10 +50,10 @@ export default class Transaction{
     target: TargetType;
 
     @Prop()
-    tracking_code:string;
+    trackingCode:string;
 
     @Prop()
-    visit_id:string;
+    visitId:string;
 
     @Prop({type: Date})
     createdAt: string;

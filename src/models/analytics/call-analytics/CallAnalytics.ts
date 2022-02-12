@@ -1,10 +1,11 @@
 import {CallMetricsEvent, UserType} from '../../Enums';
+import {smartDate} from 'javascript-dev-kit';
 
 export class AbstractCallMetric<T extends any>{
     public readonly sessionId: string;
     public readonly event: CallMetricsEvent;
     public readonly data?: T;
-    public readonly timeStamp = Date.now();
+    public readonly timeStamp = smartDate().toISOString();
     public userId!: string;
 
     constructor(sessionId: string,event: CallMetricsEvent, data?: T) {

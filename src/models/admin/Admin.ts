@@ -1,6 +1,6 @@
 import {AdminType} from '../Enums';
 import {Privileges} from '../../../index';
-import {ObjectId, Prop, Schema} from '../../mongoose-types';
+import {Prop, Schema} from '../../mongoose-types';
 
 @Schema()
 export default class Admin {

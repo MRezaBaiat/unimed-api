@@ -113,7 +113,7 @@ class DetailsType {
     shaba:string;
 
     @Prop()
-    nezam_pezeshki_code:string;
+    nezamPezeshkiCode:string;
 
     @Prop()
     cut: number;
@@ -125,7 +125,7 @@ class DetailsType {
     hospitals:[HealthCenter];
 
     @Prop({type: ()=> ResponseDaysDetailsType})
-    response_days: {
+    responseDays: {
         0: ResponseTime[],
         1: ResponseTime[],
         2: ResponseTime[],
@@ -169,7 +169,7 @@ export default class User {
 
     @Exclude()
     @Prop()
-    sms_code?: string;
+    smsCode?: string;
 
     @Exclude()
     @Prop()
@@ -182,7 +182,7 @@ export default class User {
     updatedAt: string;
 
     @Prop({type: [String]})
-    finalizable_visits!:Visit[] | string[];
+    finalizableVisits!:Visit[] | string[];
 
     @Prop()
     gender:'male' | 'female' | '' = '';

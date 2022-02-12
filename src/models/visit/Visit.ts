@@ -14,7 +14,7 @@ class ConversationType{
 
 class ReceiptType{
     @Prop()
-    transaction_id: string;
+    transactionId: string;
 
     @Prop()
     total: number;
@@ -35,7 +35,7 @@ class ReceiptType{
     healthCenterId: string;
 
     @Prop()
-    return_transaction_id:string;
+    returnTransactionId:string;
 
     @Prop({default: false})
     settled:boolean;

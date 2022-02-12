@@ -39,10 +39,10 @@ export default class Chat{
     url!: string;
 
     @Prop()
-    file_size!:number;
+    fileSize!:number;
 
     @Prop()
-    file_name!: string;
+    fileName!: string;
 
     @Prop({type: ()=> MediaInfoType})
     mediaInfo!: MediaInfoType
