@@ -65,7 +65,7 @@ export default class ServerConfig {
     iceTransportPolicy: 'relay' | 'all';
 
     @Prop()
-    preferredCodecs: 'vp8' | 'vp9' | 'h264'[];
+    preferredCodecs: ('vp8' | 'vp9' | 'h264')[];
 
     @Prop()
     trickleIce: boolean;
