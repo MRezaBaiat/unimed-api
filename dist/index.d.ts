@@ -13,7 +13,6 @@ import QueryResponse from './src/models/QueryResponse';
 import Rating from './src/models/rating/Rating';
 import ServerConfig from './src/models/serverconfig/ServerConfig';
 import Helper from './src/helpers/Helper';
-import MedicalService from './src/models/medical_service/MedicalService';
 import ResponseTime from './src/models/response_time/ResponseTime';
 import AdminLog from './src/models/admin_log/AdminLog';
 import Privileges, { PrivilegeOptions, PrivilegeOptionsDetails } from './src/models/privileges/Privileges';
@@ -32,7 +31,7 @@ export * from './src/models/Enums';
 import GeneralEvent from './src/models/events/GeneralEvent';
 import ConferenceEvent from './src/models/events/ConferenceEvent';
 import Conference, { Participant } from './src/models/conference/Conference';
-export { AbstractCallMetric, FileInfo, FileMetaData, CallAnalytics, Participant, Conference, ConferenceEvent, GeneralEvent, Events, Translations, Colors, Issuer, WorkTime, Archive, CrashReport, Notification, PrivilegeOptionsDetails, PrivilegeOptions, Privileges, AdminLog, ResponseTime, User, Chat, WorkTimes, DoctorStatus, PatientStatus, Specialization, MedicalService, HealthCenter, DiscountCoupon, Transaction, Visit, Admin, FinancialAudit, QueryResponse, Rating, ServerConfig, Helper };
+export { AbstractCallMetric, FileInfo, FileMetaData, CallAnalytics, Participant, Conference, ConferenceEvent, GeneralEvent, Events, Translations, Colors, Issuer, WorkTime, Archive, CrashReport, Notification, PrivilegeOptionsDetails, PrivilegeOptions, Privileges, AdminLog, ResponseTime, User, Chat, WorkTimes, DoctorStatus, PatientStatus, Specialization, HealthCenter, DiscountCoupon, Transaction, Visit, Admin, FinancialAudit, QueryResponse, Rating, ServerConfig, Helper };
 export declare type HTMLTypes = 'text' | 'name' | 'number' | 'password' | 'tel' | 'date' | 'datetime-local' | 'file' | 'image' | 'month' | 'email' | 'url' | 'search';
 export interface ValidatorField {
     validator: any;

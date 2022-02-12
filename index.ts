@@ -13,7 +13,6 @@ import QueryResponse from './src/models/QueryResponse';
 import Rating from './src/models/rating/Rating';
 import ServerConfig from './src/models/serverconfig/ServerConfig';
 import Helper from './src/helpers/Helper';
-import MedicalService from './src/models/medical_service/MedicalService';
 import ResponseTime from './src/models/response_time/ResponseTime';
 import AdminLog from './src/models/admin_log/AdminLog';
 import Privileges,{PrivilegeOptions,PrivilegeOptionsDetails} from './src/models/privileges/Privileges';
@@ -61,7 +60,6 @@ export {
     DoctorStatus,
     PatientStatus,
     Specialization,
-    MedicalService,
     HealthCenter,
     DiscountCoupon,
     Transaction,

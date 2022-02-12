@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Helper = exports.ServerConfig = exports.Rating = exports.Admin = exports.Visit = exports.Transaction = exports.DiscountCoupon = exports.HealthCenter = exports.MedicalService = exports.Specialization = exports.WorkTimes = exports.Chat = exports.User = exports.ResponseTime = exports.AdminLog = exports.Privileges = exports.PrivilegeOptions = exports.PrivilegeOptionsDetails = exports.Notification = exports.CrashReport = exports.Archive = exports.Colors = exports.Translations = exports.Events = exports.GeneralEvent = exports.ConferenceEvent = exports.Conference = exports.CallAnalytics = exports.FileMetaData = exports.FileInfo = exports.AbstractCallMetric = void 0;
+exports.Helper = exports.ServerConfig = exports.Rating = exports.Admin = exports.Visit = exports.Transaction = exports.DiscountCoupon = exports.HealthCenter = exports.Specialization = exports.WorkTimes = exports.Chat = exports.User = exports.ResponseTime = exports.AdminLog = exports.Privileges = exports.PrivilegeOptions = exports.PrivilegeOptionsDetails = exports.Notification = exports.CrashReport = exports.Archive = exports.Colors = exports.Translations = exports.Events = exports.GeneralEvent = exports.ConferenceEvent = exports.Conference = exports.CallAnalytics = exports.FileMetaData = exports.FileInfo = exports.AbstractCallMetric = void 0;
 const tslib_1 = require("tslib");
 const User_1 = (0, tslib_1.__importDefault)(require("./src/models/users/User"));
 exports.User = User_1.default;
@@ -24,8 +24,6 @@ const ServerConfig_1 = (0, tslib_1.__importDefault)(require("./src/models/server
 exports.ServerConfig = ServerConfig_1.default;
 const Helper_1 = (0, tslib_1.__importDefault)(require("./src/helpers/Helper"));
 exports.Helper = Helper_1.default;
-const MedicalService_1 = (0, tslib_1.__importDefault)(require("./src/models/medical_service/MedicalService"));
-exports.MedicalService = MedicalService_1.default;
 const ResponseTime_1 = (0, tslib_1.__importDefault)(require("./src/models/response_time/ResponseTime"));
 exports.ResponseTime = ResponseTime_1.default;
 const AdminLog_1 = (0, tslib_1.__importDefault)(require("./src/models/admin_log/AdminLog"));
