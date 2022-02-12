@@ -19,8 +19,8 @@ export default class Transaction {
     healthCenterCut: number;
     issuer: IssuerType;
     target: TargetType;
-    tracking_code: string;
-    visit_id: string;
+    trackingCode: string;
+    visitId: string;
     createdAt: string;
     updatedAt: string;
     hint: string;

@@ -2,9 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AbstractCallMetric = void 0;
 const Enums_1 = require("../../Enums");
+const javascript_dev_kit_1 = require("javascript-dev-kit");
 class AbstractCallMetric {
     constructor(sessionId, event, data) {
-        this.timeStamp = Date.now();
+        this.timeStamp = (0, javascript_dev_kit_1.smartDate)().toISOString();
         this.sessionId = sessionId;
         this.event = event;
         this.data = data;

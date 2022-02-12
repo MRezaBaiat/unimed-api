@@ -3,7 +3,7 @@ export declare class AbstractCallMetric<T extends any> {
     readonly sessionId: string;
     readonly event: CallMetricsEvent;
     readonly data?: T;
-    readonly timeStamp: number;
+    readonly timeStamp: string;
     userId: string;
     constructor(sessionId: string, event: CallMetricsEvent, data?: T);
 }

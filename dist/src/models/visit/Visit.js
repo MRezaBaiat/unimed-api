@@ -19,7 +19,7 @@ class ReceiptType {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], ReceiptType.prototype, "transaction_id", void 0);
+], ReceiptType.prototype, "transactionId", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", Number)
@@ -47,7 +47,7 @@ class ReceiptType {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], ReceiptType.prototype, "return_transaction_id", void 0);
+], ReceiptType.prototype, "returnTransactionId", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ default: false }),
     (0, tslib_1.__metadata)("design:type", Boolean)

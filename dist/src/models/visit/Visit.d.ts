@@ -1,14 +1,14 @@
 import { Chat, DiscountCoupon, User, Rating } from '../../../index';
 import { VisitStatus } from '../Enums';
 declare class ReceiptType {
-    transaction_id: string;
+    transactionId: string;
     total: number;
     paid: number;
     doctorCut: number;
     discount: number;
     healthCenterCut: number;
     healthCenterId: string;
-    return_transaction_id: string;
+    returnTransactionId: string;
     settled: boolean;
     healthCenterSettled: boolean;
 }

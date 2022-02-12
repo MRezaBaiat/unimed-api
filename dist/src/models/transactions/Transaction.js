@@ -68,11 +68,11 @@ let Transaction = class Transaction {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], Transaction.prototype, "tracking_code", void 0);
+], Transaction.prototype, "trackingCode", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], Transaction.prototype, "visit_id", void 0);
+], Transaction.prototype, "visitId", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: Date }),
     (0, tslib_1.__metadata)("design:type", String)

@@ -60,11 +60,11 @@ class Chat {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", Number)
-], Chat.prototype, "file_size", void 0);
+], Chat.prototype, "fileSize", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], Chat.prototype, "file_name", void 0);
+], Chat.prototype, "fileName", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: () => MediaInfoType }),
     (0, tslib_1.__metadata)("design:type", MediaInfoType)

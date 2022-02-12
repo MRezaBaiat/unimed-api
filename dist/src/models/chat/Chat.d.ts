@@ -13,8 +13,8 @@ export default class Chat {
     type: ChatType;
     createdAt: string;
     url: string;
-    file_size: number;
-    file_name: string;
+    fileSize: number;
+    fileName: string;
     mediaInfo: MediaInfoType;
     constructor(text: string, sendStatus: SendStatus, type: ChatType, createdAt: string);
 }

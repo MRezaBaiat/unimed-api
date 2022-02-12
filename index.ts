@@ -14,7 +14,6 @@ import Rating from './src/models/rating/Rating';
 import ServerConfig from './src/models/serverconfig/ServerConfig';
 import Helper from './src/helpers/Helper';
 import MedicalService from './src/models/medical_service/MedicalService';
-import ServiceRequest from './src/models/service_request/ServiceRequest';
 import ResponseTime from './src/models/response_time/ResponseTime';
 import AdminLog from './src/models/admin_log/AdminLog';
 import Privileges,{PrivilegeOptions,PrivilegeOptionsDetails} from './src/models/privileges/Privileges';
@@ -22,7 +21,6 @@ import Notification from './src/models/notification/Notification';
 import CrashReport from './src/models/crash_report/CrashReport';
 import Archive from './src/models/archive/Archive';
 import WorkTime from './src/models/response_time/WorkTime';
-import Reservation,{ReservationRequest} from './src/models/reservation/Reservation';
 import Issuer from './src/models/issuer/Issuer';
 import Translations from './src/constants/translations';
 import Colors from './src/constants/colors';
@@ -45,8 +43,6 @@ export {
     ConferenceEvent,
     GeneralEvent,
     Events,
-    Reservation,
-    ReservationRequest,
     Translations,
     Colors,
     Issuer,
@@ -65,7 +61,6 @@ export {
     DoctorStatus,
     PatientStatus,
     Specialization,
-    ServiceRequest,
     MedicalService,
     HealthCenter,
     DiscountCoupon,

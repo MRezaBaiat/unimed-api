@@ -38,11 +38,11 @@ declare class DetailsType {
     maxVisitDurationMillisec: number;
     city: string;
     shaba: string;
-    nezam_pezeshki_code: string;
+    nezamPezeshkiCode: string;
     cut: number;
     clinics: [HealthCenter];
     hospitals: [HealthCenter];
-    response_days: {
+    responseDays: {
         0: ResponseTime[];
         1: ResponseTime[];
         2: ResponseTime[];
@@ -63,11 +63,11 @@ export default class User {
     price: number;
     currency: number;
     ready: boolean;
-    sms_code?: string;
+    smsCode?: string;
     fcmtoken: string;
     createdAt: string;
     updatedAt: string;
-    finalizable_visits: Visit[] | string[];
+    finalizableVisits: Visit[] | string[];
     gender: 'male' | 'female' | '';
     notificationQueuePatients: string[];
     os?: string;

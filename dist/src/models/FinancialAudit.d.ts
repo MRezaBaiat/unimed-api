@@ -7,7 +7,7 @@ export default interface FinancialAudit {
     discountAmounts: number;
     payable: number;
     medicalCenterCut: number;
-    fromDate: number;
-    toDate: number;
+    fromDate: string;
+    toDate: string;
     unsettledVisits: Visit[];
 }

@@ -128,7 +128,7 @@ class DetailsType {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], DetailsType.prototype, "nezam_pezeshki_code", void 0);
+], DetailsType.prototype, "nezamPezeshkiCode", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", Number)
@@ -144,7 +144,7 @@ class DetailsType {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: () => ResponseDaysDetailsType }),
     (0, tslib_1.__metadata)("design:type", Object)
-], DetailsType.prototype, "response_days", void 0);
+], DetailsType.prototype, "responseDays", void 0);
 let User = class User {
     constructor(type, mobile) {
         this.name = '';
@@ -194,7 +194,7 @@ let User = class User {
     (0, class_transformer_1.Exclude)(),
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)
-], User.prototype, "sms_code", void 0);
+], User.prototype, "smsCode", void 0);
 (0, tslib_1.__decorate)([
     (0, class_transformer_1.Exclude)(),
     (0, mongoose_types_1.Prop)(),
@@ -211,7 +211,7 @@ let User = class User {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: [String] }),
     (0, tslib_1.__metadata)("design:type", Array)
-], User.prototype, "finalizable_visits", void 0);
+], User.prototype, "finalizableVisits", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)

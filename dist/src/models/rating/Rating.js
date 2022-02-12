@@ -11,26 +11,26 @@ class Rating {
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "service_quality", void 0);
+], Rating.prototype, "serviceQuality", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "video_call_satisfaction", void 0);
+], Rating.prototype, "videoCallSatisfaction", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "doctor_details_clearity", void 0);
+], Rating.prototype, "doctorDetailsClearity", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "doctor_solutions", void 0);
+], Rating.prototype, "doctorSolutions", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "doctor_detailed_consequences", void 0);
+], Rating.prototype, "doctorDetailedConsequences", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], Rating.prototype, "environment_details", void 0);
+], Rating.prototype, "environmentDetails", void 0);
 exports.default = Rating;
 ;
