@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Helper = exports.ServerConfig = exports.Rating = exports.Admin = exports.Visit = exports.Transaction = exports.DiscountCoupon = exports.HealthCenter = exports.MedicalService = exports.ServiceRequest = exports.Specialization = exports.WorkTimes = exports.Chat = exports.User = exports.ResponseTime = exports.AdminLog = exports.Privileges = exports.PrivilegeOptions = exports.PrivilegeOptionsDetails = exports.Notification = exports.CrashReport = exports.Archive = exports.Colors = exports.Translations = exports.ReservationRequest = exports.Reservation = exports.Events = exports.GeneralEvent = exports.ConferenceEvent = exports.Conference = exports.CallAnalytics = exports.FileMetaData = exports.FileInfo = exports.AbstractCallMetric = void 0;
+exports.Helper = exports.ServerConfig = exports.Rating = exports.Admin = exports.Visit = exports.Transaction = exports.DiscountCoupon = exports.HealthCenter = exports.MedicalService = exports.Specialization = exports.WorkTimes = exports.Chat = exports.User = exports.ResponseTime = exports.AdminLog = exports.Privileges = exports.PrivilegeOptions = exports.PrivilegeOptionsDetails = exports.Notification = exports.CrashReport = exports.Archive = exports.Colors = exports.Translations = exports.Events = exports.GeneralEvent = exports.ConferenceEvent = exports.Conference = exports.CallAnalytics = exports.FileMetaData = exports.FileInfo = exports.AbstractCallMetric = void 0;
 const tslib_1 = require("tslib");
 const User_1 = (0, tslib_1.__importDefault)(require("./src/models/users/User"));
 exports.User = User_1.default;
@@ -26,8 +26,6 @@ const Helper_1 = (0, tslib_1.__importDefault)(require("./src/helpers/Helper"));
 exports.Helper = Helper_1.default;
 const MedicalService_1 = (0, tslib_1.__importDefault)(require("./src/models/medical_service/MedicalService"));
 exports.MedicalService = MedicalService_1.default;
-const ServiceRequest_1 = (0, tslib_1.__importDefault)(require("./src/models/service_request/ServiceRequest"));
-exports.ServiceRequest = ServiceRequest_1.default;
 const ResponseTime_1 = (0, tslib_1.__importDefault)(require("./src/models/response_time/ResponseTime"));
 exports.ResponseTime = ResponseTime_1.default;
 const AdminLog_1 = (0, tslib_1.__importDefault)(require("./src/models/admin_log/AdminLog"));
@@ -42,9 +40,6 @@ const CrashReport_1 = (0, tslib_1.__importDefault)(require("./src/models/crash_r
 exports.CrashReport = CrashReport_1.default;
 const Archive_1 = (0, tslib_1.__importDefault)(require("./src/models/archive/Archive"));
 exports.Archive = Archive_1.default;
-const Reservation_1 = (0, tslib_1.__importStar)(require("./src/models/reservation/Reservation"));
-exports.Reservation = Reservation_1.default;
-Object.defineProperty(exports, "ReservationRequest", { enumerable: true, get: function () { return Reservation_1.ReservationRequest; } });
 const translations_1 = (0, tslib_1.__importDefault)(require("./src/constants/translations"));
 exports.Translations = translations_1.default;
 const colors_1 = (0, tslib_1.__importDefault)(require("./src/constants/colors"));
