@@ -133,7 +133,7 @@ class Stats extends AbstractCallMetric {
     }
 }
 class Error extends AbstractCallMetric {
-    constructor(sessionId, info, error) {
+    constructor(sessionId, error, info) {
         super(sessionId, Enums_1.CallMetricsEvent.ERROR, { info, error });
     }
 }

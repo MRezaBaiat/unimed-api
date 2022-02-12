@@ -146,7 +146,7 @@ class Stats extends AbstractCallMetric<{
 }
 
 class Error extends AbstractCallMetric<{ info: string,error: any }>{
-        constructor(sessionId: string,info: string,error: Error) {
+        constructor(sessionId: string,error: Error,info?: string) {
             super(sessionId,CallMetricsEvent.ERROR,{info, error});
         }
 }
@@ -199,8 +199,8 @@ class RTCIceCandidate extends AbstractCallMetric<{ candidate: any }>{
     }
 }
 
-class RTCIceCandidateError extends AbstractCallMetric<{ errorCode: string,errorText: string,hostCandidate: string,url: string }>{
-    constructor(sessionId: string,data: { errorCode: string,errorText: string,hostCandidate: string,url: string }) {
+class RTCIceCandidateError extends AbstractCallMetric<{ errorCode: number,errorText: string,hostCandidate: string,url: string }>{
+    constructor(sessionId: string,data: { errorCode: number,errorText: string,hostCandidate: string,url: string }) {
         super(sessionId,CallMetricsEvent.RTC_ICE_CANDIDATE_ERROR,data);
     }
 }

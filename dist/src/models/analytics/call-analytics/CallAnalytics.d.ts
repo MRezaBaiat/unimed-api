@@ -35,7 +35,7 @@ declare class Error extends AbstractCallMetric<{
     info: string;
     error: any;
 }> {
-    constructor(sessionId: string, info: string, error: Error);
+    constructor(sessionId: string, error: Error, info?: string);
 }
 declare class AudioRouteChanged extends AbstractCallMetric<{
     availableDevices: string[];
@@ -110,13 +110,13 @@ declare class RTCIceCandidate extends AbstractCallMetric<{
     });
 }
 declare class RTCIceCandidateError extends AbstractCallMetric<{
-    errorCode: string;
+    errorCode: number;
     errorText: string;
     hostCandidate: string;
     url: string;
 }> {
     constructor(sessionId: string, data: {
-        errorCode: string;
+        errorCode: number;
         errorText: string;
         hostCandidate: string;
         url: string;
