@@ -1,4 +1,3 @@
-import FileAddresses from './src/constants/FileAddresses';
 import User from './src/models/users/User';
 import Chat from './src/models/chat/Chat';
 import Specialization from './src/models/specialization/Specialization';
@@ -62,7 +61,6 @@ export {
     Privileges,
     AdminLog,
     ResponseTime,
-    FileAddresses,
     User,
     Chat,
     WorkTimes,
