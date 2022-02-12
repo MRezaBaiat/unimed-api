@@ -18,8 +18,8 @@ declare class Visit {
     doctor: User;
     discount?: DiscountCoupon;
     state: VisitStatus;
-    createdAt: Date;
-    updatedAt: Date;
+    createdAt: string;
+    updatedAt: string;
     startDate: string;
     endDate: string;
     conversations: {

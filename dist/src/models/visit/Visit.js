@@ -75,19 +75,19 @@ let Visit = class Visit {
     (0, tslib_1.__metadata)("design:type", String)
 ], Visit.prototype, "state", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Date)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Visit.prototype, "createdAt", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Date)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Visit.prototype, "updatedAt", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)({ index: true }),
+    (0, mongoose_types_1.Prop)({ type: Date, index: true }),
     (0, tslib_1.__metadata)("design:type", String)
 ], Visit.prototype, "startDate", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)({ index: true }),
+    (0, mongoose_types_1.Prop)({ type: Date, index: true }),
     (0, tslib_1.__metadata)("design:type", String)
 ], Visit.prototype, "endDate", void 0);
 (0, tslib_1.__decorate)([

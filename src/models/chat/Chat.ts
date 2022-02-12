@@ -32,8 +32,8 @@ export default class Chat{
     @Prop({required: true})
     type: ChatType;
 
-    @Prop()
-    date:number;
+    @Prop({type: Date})
+    createdAt:string;
 
     @Prop()
     url!: string;
@@ -47,10 +47,10 @@ export default class Chat{
     @Prop({type: ()=> MediaInfoType})
     mediaInfo!: MediaInfoType
 
-    constructor(text: string,sendStatus: SendStatus,type: ChatType,date: number) {
+    constructor(text: string,sendStatus: SendStatus,type: ChatType,createdAt: string) {
         this.text = text;
         this.sendStatus = sendStatus;
         this.type = type;
-        this.date = date;
+        this.createdAt = createdAt;
     }
 }

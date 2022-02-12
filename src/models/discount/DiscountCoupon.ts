@@ -13,28 +13,28 @@ export default class DiscountCoupon{
     @Prop({required: true})
     amount: number;
 
-    @Prop({required: true})
-    start_date: number;
+    @Prop({type: Date,required: true})
+    startDate: string;
+
+    @Prop({type: Date,required: true})
+    endDate: string;
 
     @Prop({required: true})
-    end_date: number;
+    perUserLimit: number;
 
     @Prop({required: true})
-    per_user_limit: number;
-
-    @Prop({required: true})
-    total_usage_limit: number;
+    totalUsageLimit: number;
 
     @Prop({type: [String],required: true, default: []})
     usages: string[];
 
-    constructor(title: string,code: string,amount: number,startDate: number,endDate: number,perUserLimit: number,totalUsageLimit: number) {
+    constructor(title: string,code: string,amount: number,startDate: string,endDate: string,perUserLimit: number,totalUsageLimit: number) {
         this.title = title;
         this.code = code;
         this.amount = amount;
-        this.start_date = startDate;
-        this.end_date = endDate;
-        this.per_user_limit = perUserLimit;
-        this.total_usage_limit = totalUsageLimit;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.perUserLimit = perUserLimit;
+        this.totalUsageLimit = totalUsageLimit;
     }
 }

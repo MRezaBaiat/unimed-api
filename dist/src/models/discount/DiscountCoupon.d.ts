@@ -3,10 +3,10 @@ export default class DiscountCoupon {
     title: string;
     code: string;
     amount: number;
-    start_date: number;
-    end_date: number;
-    per_user_limit: number;
-    total_usage_limit: number;
+    startDate: string;
+    endDate: string;
+    perUserLimit: number;
+    totalUsageLimit: number;
     usages: string[];
-    constructor(title: string, code: string, amount: number, startDate: number, endDate: number, perUserLimit: number, totalUsageLimit: number);
+    constructor(title: string, code: string, amount: number, startDate: string, endDate: string, perUserLimit: number, totalUsageLimit: number);
 }

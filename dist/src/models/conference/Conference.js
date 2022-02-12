@@ -53,12 +53,12 @@ let Conference = class Conference {
     (0, tslib_1.__metadata)("design:type", String)
 ], Conference.prototype, "visitId", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Date)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Conference.prototype, "createdAt", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Number)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], Conference.prototype, "endedAt", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),

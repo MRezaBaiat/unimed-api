@@ -22,11 +22,11 @@ class MediaInfoType {
     (0, tslib_1.__metadata)("design:type", Number)
 ], MediaInfoType.prototype, "orientation", void 0);
 class Chat {
-    constructor(text, sendStatus, type, date) {
+    constructor(text, sendStatus, type, createdAt) {
         this.text = text;
         this.sendStatus = sendStatus;
         this.type = type;
-        this.date = date;
+        this.createdAt = createdAt;
     }
 }
 (0, tslib_1.__decorate)([
@@ -50,9 +50,9 @@ class Chat {
     (0, tslib_1.__metadata)("design:type", String)
 ], Chat.prototype, "type", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Number)
-], Chat.prototype, "date", void 0);
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
+], Chat.prototype, "createdAt", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)(),
     (0, tslib_1.__metadata)("design:type", String)

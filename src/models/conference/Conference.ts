@@ -47,11 +47,11 @@ export default class Conference{
     @Prop({required: true, index: true})
     public visitId: string;
 
-    @Prop()
-    public createdAt: Date;
+    @Prop({type: Date})
+    public createdAt: string;
 
-    @Prop()
-    public endedAt!: number;
+    @Prop({type: Date})
+    public endedAt!: string;
 
     @Prop({required: true})
     public type: ConferenceType;

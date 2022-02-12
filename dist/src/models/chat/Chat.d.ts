@@ -11,11 +11,11 @@ export default class Chat {
     text: string;
     sendStatus: SendStatus;
     type: ChatType;
-    date: number;
+    createdAt: string;
     url: string;
     file_size: number;
     file_name: string;
     mediaInfo: MediaInfoType;
-    constructor(text: string, sendStatus: SendStatus, type: ChatType, date: number);
+    constructor(text: string, sendStatus: SendStatus, type: ChatType, createdAt: string);
 }
 export {};

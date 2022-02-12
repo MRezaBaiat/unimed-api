@@ -201,12 +201,12 @@ let User = class User {
     (0, tslib_1.__metadata)("design:type", String)
 ], User.prototype, "fcmtoken", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Date)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], User.prototype, "createdAt", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)(),
-    (0, tslib_1.__metadata)("design:type", Date)
+    (0, mongoose_types_1.Prop)({ type: Date }),
+    (0, tslib_1.__metadata)("design:type", String)
 ], User.prototype, "updatedAt", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: [String] }),

@@ -60,16 +60,16 @@ class Visit {
     @Prop({required: true,default:VisitStatus.IN_QUEUE,index: true})
     state: VisitStatus;
 
-    @Prop()
-    createdAt: Date;
+    @Prop({type: Date})
+    createdAt: string;
 
-    @Prop()
-    updatedAt: Date;
+    @Prop({type: Date})
+    updatedAt: string;
 
-    @Prop({index: true})
+    @Prop({type: Date,index: true})
     startDate: string;
 
-    @Prop({index: true})
+    @Prop({type: Date,index: true})
     endDate: string;
 
     @Prop({type: ()=> [ConversationType], default: []})

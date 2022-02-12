@@ -65,8 +65,8 @@ export default class User {
     ready: boolean;
     sms_code?: string;
     fcmtoken: string;
-    createdAt: Date;
-    updatedAt: Date;
+    createdAt: string;
+    updatedAt: string;
     finalizable_visits: Visit[] | string[];
     gender: 'male' | 'female' | '';
     notificationQueuePatients: string[];

@@ -55,11 +55,11 @@ export default class Transaction{
     @Prop()
     visit_id:string;
 
-    @Prop()
-    createdAt:Date;
+    @Prop({type: Date})
+    createdAt: string;
 
-    @Prop()
-    updatedAt:Date;
+    @Prop({type: Date})
+    updatedAt: string;
 
     @Prop({default: ''})
     hint:string;

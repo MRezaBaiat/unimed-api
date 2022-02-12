@@ -7,10 +7,10 @@ let DiscountCoupon = class DiscountCoupon {
         this.title = title;
         this.code = code;
         this.amount = amount;
-        this.start_date = startDate;
-        this.end_date = endDate;
-        this.per_user_limit = perUserLimit;
-        this.total_usage_limit = totalUsageLimit;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.perUserLimit = perUserLimit;
+        this.totalUsageLimit = totalUsageLimit;
     }
 };
 (0, tslib_1.__decorate)([
@@ -26,27 +26,27 @@ let DiscountCoupon = class DiscountCoupon {
     (0, tslib_1.__metadata)("design:type", Number)
 ], DiscountCoupon.prototype, "amount", void 0);
 (0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)({ required: true }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], DiscountCoupon.prototype, "start_date", void 0);
+    (0, mongoose_types_1.Prop)({ type: Date, required: true }),
+    (0, tslib_1.__metadata)("design:type", String)
+], DiscountCoupon.prototype, "startDate", void 0);
+(0, tslib_1.__decorate)([
+    (0, mongoose_types_1.Prop)({ type: Date, required: true }),
+    (0, tslib_1.__metadata)("design:type", String)
+], DiscountCoupon.prototype, "endDate", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], DiscountCoupon.prototype, "end_date", void 0);
+], DiscountCoupon.prototype, "perUserLimit", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ required: true }),
     (0, tslib_1.__metadata)("design:type", Number)
-], DiscountCoupon.prototype, "per_user_limit", void 0);
-(0, tslib_1.__decorate)([
-    (0, mongoose_types_1.Prop)({ required: true }),
-    (0, tslib_1.__metadata)("design:type", Number)
-], DiscountCoupon.prototype, "total_usage_limit", void 0);
+], DiscountCoupon.prototype, "totalUsageLimit", void 0);
 (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Prop)({ type: [String], required: true, default: [] }),
     (0, tslib_1.__metadata)("design:type", Array)
 ], DiscountCoupon.prototype, "usages", void 0);
 DiscountCoupon = (0, tslib_1.__decorate)([
     (0, mongoose_types_1.Schema)(),
-    (0, tslib_1.__metadata)("design:paramtypes", [String, String, Number, Number, Number, Number, Number])
+    (0, tslib_1.__metadata)("design:paramtypes", [String, String, Number, String, String, Number, Number])
 ], DiscountCoupon);
 exports.default = DiscountCoupon;

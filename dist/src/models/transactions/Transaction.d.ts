@@ -21,8 +21,8 @@ export default class Transaction {
     target: TargetType;
     tracking_code: string;
     visit_id: string;
-    createdAt: Date;
-    updatedAt: Date;
+    createdAt: string;
+    updatedAt: string;
     hint: string;
     constructor(type: TransactionType, amount: number);
 }

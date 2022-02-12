@@ -175,11 +175,11 @@ export default class User {
     @Prop()
     fcmtoken: string;
 
-    @Prop()
-    createdAt: Date;
+    @Prop({type: Date})
+    createdAt: string;
 
-    @Prop()
-    updatedAt: Date;
+    @Prop({type: Date})
+    updatedAt: string;
 
     @Prop({type: [String]})
     finalizable_visits!:Visit[] | string[];
