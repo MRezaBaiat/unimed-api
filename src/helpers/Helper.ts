@@ -24,19 +24,19 @@ const createResponsiveDaysText = (responseDays: {},lang = 'fa'): string=>{
 const dayNumberToString = (day: string,lang = 'fa'): string => {
     switch (day) {
         case '0':
-            return lang === 'fa' ? 'یکشنبه' : 'Sunday';
+            return lang === 'fa' ? 'یکشنبه' : lang === 'en' ? 'Sunday': 'azar günü';
         case '1':
-            return lang === 'fa' ? 'دوشنبه' : 'Monday';
+            return lang === 'fa' ? 'دوشنبه' : lang === 'en' ?  'Monday' : 'bazar ertəsi';
         case '2':
-            return lang === 'fa' ? 'سه شنبه' : 'Tuesday';
+            return lang === 'fa' ? 'سه شنبه' : lang === 'en' ?  'Tuesday' : 'çərşənbə axşamı';
         case '3':
-            return lang === 'fa' ? 'چهارشنبه' : 'Wednesday';
+            return lang === 'fa' ? 'چهارشنبه' : lang === 'en' ?  'Wednesday' : 'çərşənbə';
         case '4':
-            return lang === 'fa' ? 'پنجشنبه' : 'Thursday';
+            return lang === 'fa' ? 'پنجشنبه' : lang === 'en' ?  'Thursday' : 'cümə axşamı';
         case '5':
-            return lang === 'fa' ? 'جمعه' : 'Friday';
+            return lang === 'fa' ? 'جمعه' : lang === 'en' ?  'Friday' : 'cümə';
         case '6':
-            return lang === 'fa' ? 'شنبه' : 'Saturday';
+            return lang === 'fa' ? 'شنبه' : lang === 'en' ?  'Saturday' : 'şənbə';
         default:
             return '';
     }
